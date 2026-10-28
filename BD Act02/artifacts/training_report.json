@@ -1,0 +1,21 @@
+{
+  "model": "IsolationForest",
+  "purpose": "Unsupervised Instacart order anomaly detection",
+  "created_at_utc": "2026-10-27T14:44:40.574913+00:00",
+  "eligible_orders_with_prior_products": 3214874,
+  "training_rows": 200000,
+  "features": [
+    "order_number",
+    "order_dow",
+    "order_hour_of_day",
+    "days_since_prior_order",
+    "items_in_order",
+    "reorder_rate"
+  ],
+  "n_estimators": 150,
+  "contamination": 0.01,
+  "random_state": 42,
+  "ground_truth_available": false,
+  "accuracy_claimed": false,
+  "model_file": "isolation_forest.joblib"
+}
